@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="series.xsl" ?>
+<series>
+	
+	<serie>
+		<nom>Fear The Walking Dead</nom>
+	</serie>
+	<serie>
+		<nom>All About My Mom</nom>
+	</serie>
+	<serie>
+		<nom>The Blacklist</nom>
+	</serie>
+	
+</series>
