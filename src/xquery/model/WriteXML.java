@@ -30,23 +30,12 @@ public class WriteXML {
             final DocumentBuilder builder = factory.newDocumentBuilder();
             //Etape 3 : création d'un Document
             final Document document = builder.newDocument();
-            // Etape 4 : création de l'Element racine
-            final Element racine = document.createElement("systeme");
+            // Etape 4 : création de l'Element racine series
+            final Element racine = document.createElement("series");
             document.appendChild(racine);
-            //creation du premier attribut pour la xsd
-            Attr attr2 = document.createAttribute("xmlns:xsi");
-		attr2.setValue("http://www.w3.org/2001/XMLSchema-instance");
-		racine.setAttributeNode(attr2);
-            //creation du deuxieme attribut pour le fichier xsd, permet de définir le fichier xsd correspondant.
-            Attr attr = document.createAttribute("xsi:noNamespaceSchemaLocation");
-		attr.setValue("series.xsd");
-		racine.setAttributeNode(attr);
-            //création de l'element series qui correspond à notre premier node
-            final Element racinebis = document.createElement("series");
-            racine.appendChild(racinebis);
             // Etape 5 : création du second element	 
             final Element serie = document.createElement("serie");
-            racinebis.appendChild(serie);
+            racine.appendChild(serie);
             //Etape 6 : création du node nom de la série
             final Element nom = document.createElement("nom");
             nom.appendChild(document.createTextNode(nom_serie));

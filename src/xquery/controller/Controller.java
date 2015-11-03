@@ -116,7 +116,7 @@ public class Controller {
                                     //test permettant de récuperer les series qui sont correspondantes; on vérifie si dans les liens et dans les titres de notre rss, ils contiennent le titre de nos séries de notre series.xml
                                     if (titre_serie_rss_table[i].trim().matches(".*" + titre_serie_table[j].trim() + ".*")||titre_serie_rss_table[i+1].trim().matches(".*" + titre_serie_table[j].trim() + ".*")) {
                                         //on ajout le lien à l'arraylist contenant les liens de la série
-                                        link.add(titre_serie_rss_table[i].trim());
+                                        link.add(titre_serie_rss_table[i+1].trim());
                                     }
                                 }
                                 //on crée notre xml avec en parametre, le nom de notre série et la liste de nos liens
